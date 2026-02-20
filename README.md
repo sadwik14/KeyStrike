@@ -1,6 +1,15 @@
 # KeyStrike - Speed Typing Challenge
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.4-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7.3-blue)](https://www.typescriptlang.org/)
+
 A modern, competitive typing speed test application built with Next.js, React, and Tailwind CSS. Features a bold orange and white design with advanced UI/UX patterns.
+
+**Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
+**Contact**: zetfounder@gmail.com  
+**© 2024 KeyStrike. All rights reserved.**
 
 ## Features Implemented
 
@@ -166,6 +175,39 @@ Edit sample texts in `/components/typing-test.tsx` `SAMPLE_TEXTS` array.
 - Multi-language support
 - API for custom tests
 
+## Documentation
+
+- [Quick Start Guide](QUICKSTART.md) - Get started in 5 minutes
+- [Start Here](START_HERE.md) - Quick launch guide
+- [MongoDB Setup](MONGODB_SETUP.md) - Database integration
+- [Contributing](CONTRIBUTING.md) - Contribution guidelines
+- [Changelog](CHANGELOG.md) - Version history
+- [Security](SECURITY.md) - Security policy
+- [API Documentation](API.md) - API reference
+- [FAQ](FAQ.md) - Frequently asked questions
+- [Roadmap](ROADMAP.md) - Future plans
+- [Deployment](DEPLOYMENT.md) - Deployment guide
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Quick Contribute
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing`)
+3. Commit changes (`git commit -m 'Add feature'`)
+4. Push to branch (`git push origin feature/amazing`)
+5. Open Pull Request
+
+## Support
+
+- **Email**: zetfounder@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
+
 ## License
 
-MIT - Created with v0
+MIT License - see [LICENSE](LICENSE) file for details.
+
+**Built with ❤️ by ZET-Technologies-Private-Limited**  
+**© 2024 KeyStrike. All rights reserved.**

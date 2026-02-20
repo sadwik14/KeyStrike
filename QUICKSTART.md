@@ -1,6 +1,24 @@
 # KeyStrike - Quick Start Guide
 
-## What is KeyStrike?
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+
+**Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
+**Contact**: zetfounder@gmail.com  
+**© 2024 KeyStrike. All rights reserved.**
+
+---
+
+## Table of Contents
+- [What is KeyStrike?](#what-is-keystrike)
+- [Getting Started](#getting-started-5-minutes)
+- [Features](#features)
+- [How Results Are Calculated](#how-results-are-calculated)
+- [MongoDB Setup](#mongodb-setup-optional)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+
+---
 
 A **professional typing speed test platform** with real-time WPM tracking, accuracy metrics, and global leaderboards.
 

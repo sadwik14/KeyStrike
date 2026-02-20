@@ -1,10 +1,24 @@
 # START HERE - KeyStrike Quick Launch Guide
 
-Welcome! Your **KeyStrike Typing Speed Test Platform** is ready to use.
+🚀 **Welcome to KeyStrike!** Your typing speed test platform is ready.
 
-**Built by**: ZET-Technologies-Private-Limited  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-green)](https://github.com)
+
+**Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
 **Contact**: zetfounder@gmail.com  
 **© 2024 KeyStrike. All rights reserved.**
+
+---
+
+## 📚 Quick Links
+
+- [Installation](#-quick-start-30-seconds)
+- [Documentation](README.md)
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [Security](SECURITY.md)
+- [FAQ](FAQ.md)
 
 ---
 

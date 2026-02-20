@@ -1,5 +1,21 @@
 # MongoDB Integration Setup Guide
 
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.1.0-green)](https://www.mongodb.com/)
+[![Status](https://img.shields.io/badge/Status-Optional-blue)](https://github.com)
+
+**Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
+**Contact**: zetfounder@gmail.com
+
+---
+
+## Quick Links
+- [Main README](README.md)
+- [Quick Start](QUICKSTART.md)
+- [API Documentation](API.md)
+- [Troubleshooting](#troubleshooting)
+
+---
+
 KeyStrike is built with **localStorage as default** (no database needed), but includes full **MongoDB integration** for production use.
 
 ## Current State
