@@ -7,13 +7,33 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'KeyStrike - Speed Typing Challenge',
-  description: 'Test your typing speed with KeyStrike. No signup needed. Free forever. Track your WPM, accuracy, and compete globally.',
+  metadataBase: new URL('https://keystrike.vercel.app'),
+  title: 'KeyStrike - Typing Speed Test & Learning Platform',
+  description: 'Improve typing speed with real-time WPM tracking, accuracy analytics, and guided practice modes on KeyStrike.',
+  keywords: [
+    'typing speed test',
+    'learn typing online',
+    'typing practice with fingers',
+    'wpm test free',
+    'typing accuracy test',
+    'typing trainer',
+  ],
   generator: 'v0.app',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'KeyStrike - Speed Typing Challenge',
-    description: 'Test your typing speed. No signup. No credit card. Just type.',
-    url: 'https://keystrike.app',
+    title: 'KeyStrike - Typing Speed Test & Learning Platform',
+    description: 'Improve typing speed with real-time WPM tracking, accuracy analytics, and guided practice modes.',
+    url: 'https://keystrike.vercel.app',
+    siteName: 'KeyStrike',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KeyStrike - Typing Speed Test & Learning Platform',
+    description: 'Improve typing speed with real-time WPM tracking and guided practice modes.',
   },
   icons: {
     icon: [
