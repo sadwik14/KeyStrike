@@ -220,4 +220,4 @@ For issues with MongoDB setup, contact: zetfounder@gmail.com
 ---
 
 Built with ❤️ by ZET-Technologies-Private-Limited
-© 2024 KeyStrike. All rights reserved.
+© 2026 KeyStrike. All rights reserved.

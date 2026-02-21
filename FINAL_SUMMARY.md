@@ -2,7 +2,7 @@
 
 **Built by**: ZET-Technologies-Private-Limited  
 **Email**: zetfounder@gmail.com  
-**License**: © 2024 KeyStrike. All rights reserved.
+**License**: © 2026 KeyStrike. All rights reserved.
 
 ---
 
@@ -165,7 +165,7 @@ Calculation:
 - Resets daily at 00:00 UTC
 
 Example:
-Today (2024-02-20): ✓ 3 tests
+Today (2026-02-20): ✓ 3 tests
 Yesterday: ✓ 1 test  
 Day before: ✓ 2 tests
 3 days ago: ✗ 0 tests
@@ -462,11 +462,11 @@ Profile (user account)
 │ KEYSTRIKE                              │
 │ Built by ZET-Technologies-Private-Ltd │
 │                                        │
-│ © 2024 KeyStrike. All rights reserved. │
+│ © 2026 KeyStrike. All rights reserved. │
 │ Email: zetfounder@gmail.com            │
 │                                        │
 │ Tests Taken: 24 | Words Typed: 3,456  │
-│ Since: 2024                            │
+│ Since: 2026                            │
 └────────────────────────────────────────┘
 ```
 
@@ -474,7 +474,7 @@ Features:
 - Company branding (ZET-Technologies)
 - Email contact (zetfounder@gmail.com)
 - Real-time counters from data
-- Year indicator (2024)
+- Year indicator (2026)
 - Copyright notice
 
 ---
@@ -590,7 +590,7 @@ npm run dev
 
 **Email**: zetfounder@gmail.com  
 **Company**: ZET-Technologies-Private-Limited  
-**Year**: 2024
+**Year**: 2026
 
 For:
 - MongoDB setup help
@@ -602,7 +602,7 @@ For:
 
 ## License
 
-© 2024 KeyStrike. All rights reserved.  
+© 2026 KeyStrike. All rights reserved.  
 Built by ZET-Technologies-Private-Limited
 
 ---

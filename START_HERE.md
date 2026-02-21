@@ -7,7 +7,7 @@
 
 **Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
 **Contact**: zetfounder@gmail.com  
-**© 2024 KeyStrike. All rights reserved.**
+**© 2026 KeyStrike. All rights reserved.**
 
 ---
 
@@ -408,7 +408,7 @@ Your **KeyStrike Typing Speed Test Platform** is complete and ready to use.
 ---
 
 **Built with ❤️ by ZET-Technologies-Private-Limited**  
-**© 2024 KeyStrike. All rights reserved.**  
+**© 2026 KeyStrike. All rights reserved.**  
 **Email: zetfounder@gmail.com**
 
 Happy typing! 🚀

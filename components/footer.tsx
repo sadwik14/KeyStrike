@@ -35,7 +35,7 @@ export function Footer() {
             <p className="text-xs font-bold text-accent tracking-widest mb-3">COMPANY</p>
             <div className="space-y-2 text-xs text-muted-foreground">
               <p>ZET-Technologies-Private-Limited</p>
-              <p>© 2024 KeyStrike. All rights reserved.</p>
+              <p>© 2026 KeyStrike. All rights reserved.</p>
               <a href="mailto:zetfounder@gmail.com" className="hover:text-accent transition block">
                 Contact: zetfounder@gmail.com
               </a>
@@ -74,7 +74,7 @@ export function Footer() {
               <p className="text-xs text-muted-foreground tracking-widest">WORDS TYPED</p>
             </div>
             <div>
-              <p className="text-2xl md:text-3xl font-black text-accent">2024</p>
+              <p className="text-2xl md:text-3xl font-black text-accent">2026</p>
               <p className="text-xs text-muted-foreground tracking-widest">SINCE LAUNCH</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
           <p>
-            KeyStrike © 2024 · Powered by{' '}
+            KeyStrike © 2026 · Powered by{' '}
             <span className="font-semibold text-foreground">ZET-Technologies-Private-Limited</span>
           </p>
           <div className="flex gap-6">

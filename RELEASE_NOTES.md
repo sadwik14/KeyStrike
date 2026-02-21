@@ -1,6 +1,6 @@
 # Release Notes - v1.0.0
 
-**Release Date**: January 15, 2024  
+**Release Date**: January 15, 2026  
 **Built by**: ZET-Technologies-Private-Limited
 
 ## What's New
@@ -44,4 +44,4 @@ Email: zetfounder@gmail.com
 
 ---
 
-© 2024 KeyStrike. All rights reserved.
+© 2026 KeyStrike. All rights reserved.

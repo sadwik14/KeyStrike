@@ -5,7 +5,7 @@
 
 **Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
 **Contact**: zetfounder@gmail.com  
-**© 2024 KeyStrike. All rights reserved.**
+**© 2026 KeyStrike. All rights reserved.**
 
 ---
 
@@ -24,7 +24,7 @@ A **professional typing speed test platform** with real-time WPM tracking, accur
 
 **Built by**: ZET-Technologies-Private-Limited  
 **Contact**: zetfounder@gmail.com  
-**License**: © 2024 KeyStrike. All rights reserved.
+**License**: © 2026 KeyStrike. All rights reserved.
 
 ## Getting Started (5 minutes)
 

@@ -9,7 +9,7 @@ A modern, competitive typing speed test application built with Next.js, React, a
 
 **Built by**: [ZET-Technologies-Private-Limited](mailto:zetfounder@gmail.com)  
 **Contact**: zetfounder@gmail.com  
-**© 2024 KeyStrike. All rights reserved.**
+**© 2026 KeyStrike. All rights reserved.**
 
 ## Features Implemented
 
@@ -210,4 +210,4 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 MIT License - see [LICENSE](LICENSE) file for details.
 
 **Built with ❤️ by ZET-Technologies-Private-Limited**  
-**© 2024 KeyStrike. All rights reserved.**
+**© 2026 KeyStrike. All rights reserved.**

@@ -11,7 +11,7 @@
 - [x] MongoDB integration
 - [x] Responsive design
 
-## Version 1.1 (Q1 2024)
+## Version 1.1 (Q1 2026)
 - [ ] Dark mode toggle
 - [ ] Sound effects
 - [ ] Export results to CSV
@@ -19,7 +19,7 @@
 - [ ] Custom text input
 - [ ] Keyboard layout visualization
 
-## Version 1.2 (Q2 2024)
+## Version 1.2 (Q2 2026)
 - [ ] Multi-language support
 - [ ] Code typing mode
 - [ ] User authentication
@@ -27,7 +27,7 @@
 - [ ] Friend challenges
 - [ ] Team competitions
 
-## Version 2.0 (Q3 2024)
+## Version 2.0 (Q3 2026)
 - [ ] Real-time multiplayer
 - [ ] Mobile app (React Native)
 - [ ] Browser extension
