@@ -8,29 +8,58 @@ import {
 } from '@/lib/typing-utils';
 import { saveTestResult, getProfileStats } from '@/lib/storage';
 
-const SAMPLE_TEXTS = [
-  'The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once, making it an ideal sentence for typing tests and font displays.',
-  'Speed is not about moving fast — it is about eliminating hesitation. Every keystroke is a decision. Make it reflexive.',
-  'In the realm of competitive typing, accuracy reigns supreme. A single mistake can cascade into a cascade of failures, testing not just your fingers but your mental fortitude.',
-];
+
+const CHALLENGE_TEXTS: Record<string, string[]> = {
+  daily: [
+    'The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet at least once, making it an ideal sentence for typing tests and font displays.',
+    'Every day is a new opportunity to improve your typing speed and accuracy. Consistency is the key to mastery.',
+    'Practice makes perfect. Set a daily goal and watch your words per minute soar.'
+  ],
+  'speed-demon': [
+    'Speed is not about moving fast — it is about eliminating hesitation. Every keystroke is a decision. Make it reflexive.',
+    'Type as quickly as you can, but remember: accuracy still counts in the end.',
+    'Push your limits. The faster you type, the more you learn about your own reflexes.'
+  ],
+  'accuracy-master': [
+    'In the realm of competitive typing, accuracy reigns supreme. A single mistake can cascade into a cascade of failures, testing not just your fingers but your mental fortitude.',
+    'Focus on each letter. Precision is more important than speed in this challenge.',
+    'Zero errors is the goal. Can you type this entire sentence without a single mistake?'
+  ],
+  consistency: [
+    'Stay consistent across every test. Your average is what matters most.',
+    'Keep your WPM steady and your accuracy high for the best results.',
+    'Consistency is the secret to long-term improvement in typing.'
+  ],
+  marathon: [
+    'Endurance is tested here. Can you keep up your speed for the full duration?',
+    'Ten minutes of typing will push your focus and stamina to the limit.',
+    'Marathon challenge: Don’t stop, don’t slow down, just type!'
+  ],
+  polyglot: [
+    'Typing in multiple languages is a true test of skill. Switch your brain and fingers quickly.',
+    'Bonjour! Hola! Hello! Can you type this sentence in three languages without error?',
+    'Polyglot challenge: Adapt to new words and characters as you type.'
+  ],
+};
+
 
 
 export function TypingTest({ challenge }: { challenge?: string }) {
-  // Challenge presets
-  const challengePresets: Record<string, { mode: '60' | '30' | '15', text: string }> = {
-    daily: { mode: '60', text: SAMPLE_TEXTS[0] },
-    'speed-demon': { mode: '15', text: SAMPLE_TEXTS[1] },
-    'accuracy-master': { mode: '30', text: SAMPLE_TEXTS[2] },
-    consistency: { mode: '30', text: SAMPLE_TEXTS[0] },
-    marathon: { mode: '60', text: SAMPLE_TEXTS[1] },
-    polyglot: { mode: '60', text: SAMPLE_TEXTS[2] },
+  // Challenge presets for mode
+  const challengeModes: Record<string, '60' | '30' | '15'> = {
+    daily: '60',
+    'speed-demon': '15',
+    'accuracy-master': '30',
+    consistency: '30',
+    marathon: '60',
+    polyglot: '60',
   };
-  const preset = challenge && challengePresets[challenge] ? challengePresets[challenge] : { mode: '60', text: SAMPLE_TEXTS[0] };
-
-  const [mode, setMode] = useState<'60' | '30' | '15'>(preset.mode);
-  const [targetText, setTargetText] = useState(preset.text);
+  const modePreset = challenge && challengeModes[challenge] ? challengeModes[challenge] : '60';
+  const texts = challenge && CHALLENGE_TEXTS[challenge] ? CHALLENGE_TEXTS[challenge] : CHALLENGE_TEXTS['daily'];
+  const [mode, setMode] = useState<'60' | '30' | '15'>(modePreset);
+  const [targetText, setTargetText] = useState(texts[Math.floor(Math.random() * texts.length)]);
   const [typedText, setTypedText] = useState('');
-  const [timeLeft, setTimeLeft] = useState(parseInt(preset.mode));
+  const [timeLeft, setTimeLeft] = useState(parseInt(modePreset));
   const [isActive, setIsActive] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [wpmHistory, setWpmHistory] = useState<number[]>([]);
@@ -59,10 +88,10 @@ export function TypingTest({ challenge }: { challenge?: string }) {
   // Reset when mode or challenge changes
   useEffect(() => {
     let newMode = mode;
-    let newText = targetText;
-    if (challenge && challengePresets[challenge]) {
-      newMode = challengePresets[challenge].mode;
-      newText = challengePresets[challenge].text;
+    let newTexts = texts;
+    if (challenge && challengeModes[challenge]) {
+      newMode = challengeModes[challenge];
+      newTexts = CHALLENGE_TEXTS[challenge] || CHALLENGE_TEXTS['daily'];
     }
     const newTime = parseInt(newMode);
     setTimeLeft(newTime);
@@ -70,7 +99,7 @@ export function TypingTest({ challenge }: { challenge?: string }) {
     setIsActive(false);
     setIsFinished(false);
     setWpmHistory([]);
-    setTargetText(newText);
+    setTargetText(newTexts[Math.floor(Math.random() * newTexts.length)]);
   }, [mode, challenge]);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -165,9 +194,7 @@ export function TypingTest({ challenge }: { challenge?: string }) {
             setIsFinished(false);
             setWpmHistory([]);
             setTimeLeft(parseInt(mode));
-            setTargetText(
-              SAMPLE_TEXTS[Math.floor(Math.random() * SAMPLE_TEXTS.length)]
-            );
+            setTargetText(texts[Math.floor(Math.random() * texts.length)]);
             inputRef.current?.focus();
           }}
           className="w-full bg-accent text-accent-foreground font-black py-4 hover:opacity-90 transition"
