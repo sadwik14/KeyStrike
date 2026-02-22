@@ -1,7 +1,9 @@
+
 import Link from 'next/link';
 import { Header } from '@/components/header';
 import { TypingTest } from '@/components/typing-test';
 import { Footer } from '@/components/footer';
+import { useSearchParams } from 'next/navigation';
 
 export const metadata = {
   title: 'KeyStrike Test - Speed Typing Challenge',
@@ -9,6 +11,8 @@ export const metadata = {
 };
 
 export default function TestPage() {
+  const searchParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const challenge = searchParams ? searchParams.get('challenge') : null;
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -32,7 +36,7 @@ export default function TestPage() {
         </div>
 
         <div className="border-t border-border pt-8">
-          <TypingTest />
+          <TypingTest challenge={challenge} />
         </div>
       </main>
 

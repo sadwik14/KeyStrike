@@ -125,7 +125,7 @@ export default function ChallengesPage() {
               </div>
 
               <Link
-                href="/test"
+                href={`/test?challenge=${challenge.id}`}
                 className="block w-full bg-foreground text-background font-bold py-3 text-center hover:opacity-90 transition"
                 onClick={(e) => e.stopPropagation()}
               >

@@ -14,11 +14,23 @@ const SAMPLE_TEXTS = [
   'In the realm of competitive typing, accuracy reigns supreme. A single mistake can cascade into a cascade of failures, testing not just your fingers but your mental fortitude.',
 ];
 
-export function TypingTest() {
-  const [mode, setMode] = useState<'60' | '30' | '15'>('60');
-  const [targetText, setTargetText] = useState(SAMPLE_TEXTS[0]);
+
+export function TypingTest({ challenge }: { challenge?: string }) {
+  // Challenge presets
+  const challengePresets: Record<string, { mode: '60' | '30' | '15', text: string }> = {
+    daily: { mode: '60', text: SAMPLE_TEXTS[0] },
+    'speed-demon': { mode: '15', text: SAMPLE_TEXTS[1] },
+    'accuracy-master': { mode: '30', text: SAMPLE_TEXTS[2] },
+    consistency: { mode: '30', text: SAMPLE_TEXTS[0] },
+    marathon: { mode: '60', text: SAMPLE_TEXTS[1] },
+    polyglot: { mode: '60', text: SAMPLE_TEXTS[2] },
+  };
+  const preset = challenge && challengePresets[challenge] ? challengePresets[challenge] : { mode: '60', text: SAMPLE_TEXTS[0] };
+
+  const [mode, setMode] = useState<'60' | '30' | '15'>(preset.mode);
+  const [targetText, setTargetText] = useState(preset.text);
   const [typedText, setTypedText] = useState('');
-  const [timeLeft, setTimeLeft] = useState(parseInt(mode));
+  const [timeLeft, setTimeLeft] = useState(parseInt(preset.mode));
   const [isActive, setIsActive] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [wpmHistory, setWpmHistory] = useState<number[]>([]);
@@ -44,16 +56,22 @@ export function TypingTest() {
     return () => clearInterval(interval);
   }, [isActive, timeLeft]);
 
-  // Reset when mode changes
+  // Reset when mode or challenge changes
   useEffect(() => {
-    const newTime = parseInt(mode);
+    let newMode = mode;
+    let newText = targetText;
+    if (challenge && challengePresets[challenge]) {
+      newMode = challengePresets[challenge].mode;
+      newText = challengePresets[challenge].text;
+    }
+    const newTime = parseInt(newMode);
     setTimeLeft(newTime);
     setTypedText('');
     setIsActive(false);
     setIsFinished(false);
     setWpmHistory([]);
-    setTargetText(SAMPLE_TEXTS[Math.floor(Math.random() * SAMPLE_TEXTS.length)]);
-  }, [mode]);
+    setTargetText(newText);
+  }, [mode, challenge]);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
