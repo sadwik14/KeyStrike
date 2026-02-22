@@ -1,15 +1,10 @@
-"use client";
 
+"use client";
 import Link from 'next/link';
 import { Header } from '@/components/header';
 import { TypingTest } from '@/components/typing-test';
 import { Footer } from '@/components/footer';
 import { useSearchParams } from 'next/navigation';
-
-export const metadata = {
-  title: 'KeyStrike Test - Speed Typing Challenge',
-  description: 'Take the KeyStrike typing speed test. Measure your WPM, accuracy, and consistency.',
-};
 
 export default function TestPage() {
   const searchParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
